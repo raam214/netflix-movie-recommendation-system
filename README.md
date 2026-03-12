@@ -1,4 +1,4 @@
-# 🎬 AI Movie Recommendation System
+# 🎬 netflix-movie-recommendation-system
 
 A **Netflix-style content-based movie recommendation system** built using **Machine Learning, NLP, and Streamlit**, designed as a **production-ready portfolio project**.
 
