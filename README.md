@@ -9,7 +9,7 @@ A **Netflix-style content-based movie recommendation system** built using **Mach
 ## 🚀 Features
 
 - 🎥 Content-based movie recommendations
-- 🧠 NLP-based similarity using CountVectorizer & Cosine Similarity
+- 🧠 NLP-based similarity using TF-IDF & Cosine Similarity
 - 🖼 Movie posters fetched using TMDB API
 - 🎬 Play Trailer button (YouTube)
 - ▶ Watch Options redirect (Netflix / Prime / Hotstar via TMDB)
@@ -21,7 +21,7 @@ A **Netflix-style content-based movie recommendation system** built using **Mach
 ## 🧠 How It Works
 
 1. Movie metadata (genres, keywords, cast, crew, overview) is processed
-2. Text data is converted into vectors using **CountVectorizer**
+2. Text data is converted into vectors using TF-IDF (TfidfVectorizer)
 3. **Cosine similarity** finds movies with similar content
 4. Recommendations are generated dynamically in memory
 5. TMDB API is used for posters, trailers, and watch availability
