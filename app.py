@@ -5,7 +5,7 @@ import requests
 import os
 import ast
 
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # ================= PAGE CONFIG =================
@@ -83,7 +83,7 @@ def load_and_prepare_data():
         movies["crew"].apply(lambda x: " ".join(x))
     )
 
-    cv = CountVectorizer(max_features=5000, stop_words="english")
+    cv = TfidfVectorizer(max_features=5000, stop_words="english")
     vectors = cv.fit_transform(movies["tags"]).toarray()
     similarity = cosine_similarity(vectors)
 
